@@ -12,7 +12,8 @@ locals {
 }
 
 module "mysql_server" {
-  source = ".."
+  source  = "blackbird-cloud/mysql-server/azurerm"
+  version = "~> 1"
 
   resource_group_name     = "myresourcegroup"
   resource_group_location = "westeurope"
