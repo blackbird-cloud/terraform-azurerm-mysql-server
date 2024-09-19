@@ -1,6 +1,8 @@
-# <Cloud> <Main resource> Terraform module
-A Terraform module which configures your <Cloud> <Main resource>. <Relevant docs>
-[![blackbird-logo](https://raw.githubusercontent.com/blackbird-cloud/terraform-module-template/main/.config/logo_simple.png)](https://www.blackbird.cloud)
+<!-- BEGIN_TF_DOCS -->
+# Terraform Azurerm Mysql Server Module
+Terraform module to create an Azure MySQL Server
+
+[![blackbird-logo](https://raw.githubusercontent.com/blackbird-cloud/terraform-module-template/main/.config/logo_simple.png)](https://blackbird.cloud)
 
 ## Example
 ```hcl
@@ -96,4 +98,5 @@ Checkout our other :point\_right: [terraform modules](https://registry.terraform
 
 ## Copyright
 
-Copyright © 2017-2023 [Blackbird Cloud](https://www.blackbird.cloud)
+Copyright © 2017-2024 [Blackbird Cloud](https://blackbird.cloud)
+<!-- END_TF_DOCS -->
