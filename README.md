@@ -71,13 +71,13 @@ module "mysql_server" {
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_high_availablity"></a> [high\_availablity](#input\_high\_availablity) | (Optional) The high availability zone for the MySQL server. | `string` | `"SameZone"` | no |
-| <a name="input_maintenance_window"></a> [maintenance\_window](#input\_maintenance\_window) | (Optional) The maintenance window for the MySQL server. | <pre>object({<br>    day_of_week  = number<br>    start_hour   = number<br>    start_minute = number<br>  })</pre> | <pre>{<br>  "day_of_week": 0,<br>  "start_hour": 8,<br>  "start_minute": 0<br>}</pre> | no |
+| <a name="input_maintenance_window"></a> [maintenance\_window](#input\_maintenance\_window) | (Optional) The maintenance window for the MySQL server. | <pre>object({<br/>    day_of_week  = number<br/>    start_hour   = number<br/>    start_minute = number<br/>  })</pre> | <pre>{<br/>  "day_of_week": 0,<br/>  "start_hour": 8,<br/>  "start_minute": 0<br/>}</pre> | no |
 | <a name="input_mysql_version"></a> [mysql\_version](#input\_mysql\_version) | (Optional) The version of the MySQL server. | `string` | `"8.0.21"` | no |
 | <a name="input_name"></a> [name](#input\_name) | (Optional) The name of the MySQL server. | `string` | `""` | no |
 | <a name="input_resource_group_location"></a> [resource\_group\_location](#input\_resource\_group\_location) | (Required) Location of the resource group. | `string` | `"westeurope"` | no |
 | <a name="input_resource_group_name"></a> [resource\_group\_name](#input\_resource\_group\_name) | (Required) The name of the resource group in which to create the MySQL server. | `string` | n/a | yes |
 | <a name="input_sku"></a> [sku](#input\_sku) | (Optional) The SKU name for the MySQL server. | `string` | `"GP_Standard_D2ds_v4"` | no |
-| <a name="input_storage"></a> [storage](#input\_storage) | (Optional) The storage configuration for the MySQL server. | <pre>object({<br>    auto_grow_enabled  = optional(bool)<br>    io_scaling_enabled = optional(bool)<br>    iops               = optional(number)<br>    size_gb            = optional(number)<br>  })</pre> | <pre>{<br>  "auto_grow_enabled": true,<br>  "io_scaling_enabled": false,<br>  "iops": 360,<br>  "size_gb": 20<br>}</pre> | no |
+| <a name="input_storage"></a> [storage](#input\_storage) | (Optional) The storage configuration for the MySQL server. | <pre>object({<br/>    auto_grow_enabled  = optional(bool)<br/>    io_scaling_enabled = optional(bool)<br/>    iops               = optional(number)<br/>    size_gb            = optional(number)<br/>  })</pre> | <pre>{<br/>  "auto_grow_enabled": true,<br/>  "io_scaling_enabled": false,<br/>  "iops": 360,<br/>  "size_gb": 20<br/>}</pre> | no |
 | <a name="input_subnet_id"></a> [subnet\_id](#input\_subnet\_id) | (Required) The ID of the subnet where the MySQL server should be deployed. | `string` | n/a | yes |
 | <a name="input_vnet_id"></a> [vnet\_id](#input\_vnet\_id) | (Required)The ID of the virtual network where the MySQL server should be deployed. | `string` | n/a | yes |
 
@@ -98,5 +98,5 @@ Checkout our other :point\_right: [terraform modules](https://registry.terraform
 
 ## Copyright
 
-Copyright © 2017-2024 [Blackbird Cloud](https://blackbird.cloud)
+Copyright © 2017-2025 [Blackbird Cloud](https://blackbird.cloud)
 <!-- END_TF_DOCS -->
